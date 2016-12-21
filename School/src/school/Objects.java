@@ -60,4 +60,13 @@ public class Objects {
     public void setCodOfTheTeacher(String CodOfTheTeacher) {
         this.CodOfTheTeacher = CodOfTheTeacher;
     }
+            public Objects() {
+    }
+
+    public Objects(long id, String CodeOfTheSubject, String NameOfTheSubject, String CodOfTheTeacher) {
+        this.id = id;
+        this.CodeOfTheSubject = CodeOfTheSubject;
+        this.NameOfTheSubject = NameOfTheSubject;
+        this.CodOfTheTeacher = CodOfTheTeacher;
+    }
 }

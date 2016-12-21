@@ -23,8 +23,6 @@ import javax.persistence.Table;
 @Table (name="students")
 
 public class School implements Serializable{
-   String driver = "org.apache.derby.jdbc.ClientDriver";
-    String url = "jdbc:derby://localhost:1527/sample;user=app;password=app;create=false";
    @Id @GeneratedValue
         private long id;
 @Column (name="Имя")
@@ -90,5 +88,16 @@ private int dateBirthday;
      */
     public static void main(String[] args) {
         // TODO code application logic here
+    }
+        public School() {
+    }
+
+    public School(long id, String name, String lastName, String patronymic, String CLASS, int dateBirthday) {
+        this.id = id;
+        this.name = name;
+        this.lastName = lastName;
+        this.patronymic = patronymic;
+        this.CLASS = CLASS;
+        this.dateBirthday = dateBirthday;
     }
 }

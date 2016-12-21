@@ -49,4 +49,12 @@ public class Marks {
     public void setMark(String Mark) {
         this.Mark = Mark;
     }
+                public Marks() {
+    }
+
+    public Marks(long id, String CodeOfTheSubject, String Mark) {
+        this.id = id;
+        this.CodeOfTheSubject = CodeOfTheSubject;
+        this.Mark = Mark;
+    }
 }

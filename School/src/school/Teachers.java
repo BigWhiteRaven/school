@@ -59,4 +59,18 @@ public class Teachers implements Serializable {
     
     @Column (name="Предмет")
     private String object;
+    @Override
+        public String toString() {
+            return String.format("(%d, %s, %s, %s)", this.id, this.name, this.lastName, this.object);
+        }
+
+    public Teachers() {
+    }
+
+    public Teachers(long id, String name, String lastName, String object) {
+        this.id = id;
+        this.name = name;
+        this.lastName = lastName;
+        this.object = object;
+    }
 }
